@@ -1,6 +1,6 @@
 {
   "name": "https-agent",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Proxy aware HTTPS agent",
   "main": "index.js",
   "repository": {

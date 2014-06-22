@@ -28,7 +28,7 @@ All of the standard [TLS options](http://nodejs.org/api/tls.html#tls_tls_connect
 
 ### Usage with `https.globalAgent`
 
-To use an agent for _all_ HTTPS requests (regardless of the client library), just set it as the default [global agent](http://nodejs.org/api/https.html#https_https_globalagent).
+To use an agent as the default agent (rather than setting it on every request) just set it as the [global agent](http://nodejs.org/api/https.html#https_https_globalagent).
 
 ```js
 var httpsAgent = require('https-agent');

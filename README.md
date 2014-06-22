@@ -2,7 +2,7 @@
 
 > Proxy-aware HTTPS agent for Node
 
-Creates a [HTTPS agent](http://nodejs.org/api/https.html#https_class_https_agent) that can be plugged into any HTTP client. It automatically handles proxy tunnelling using the `https_proxy` environment variable.
+Creates a [HTTPS agent](http://nodejs.org/api/https.html#https_class_https_agent) that automatically handles proxy tunnelling using the `https_proxy` environment variable.
 
 ## Installation
 

@@ -55,7 +55,14 @@ var agent = httpsAgent({
   passphrase: 'client' 
 });
 
-https.get('https://www.example.com', {agent: agent}, function (res) {
+var options = {
+  protocol: 'https:',
+  hostname: 'www.example.com',
+  port: 443,
+  agent: agent
+}
+
+https.get(options, function (res) {
   res.on('data', function (data) {
     console.log(data);
   });

@@ -2,7 +2,7 @@
 
 > HTTPS agent for Node with transparent proxy support
 
-Creates a [HTTPS agent](http://nodejs.org/api/https.html#https_class_https_agent) that automatically handles proxy tunnelling using the `https_proxy` environment variable.
+Creates a [HTTPS agent](http://nodejs.org/api/https.html#https_class_https_agent) that automatically handles proxy tunnelling using the `https_proxy` environment variable. You can then plug the agent into your HTTP client of choice and make requests using SSL client authentication.
 
 ## Installation
 

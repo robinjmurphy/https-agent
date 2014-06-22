@@ -1,6 +1,6 @@
 # https-agent
 
-> Proxy-aware HTTPS agent for Node
+> HTTPS agent for Node with transparent proxy support
 
 Creates a [HTTPS agent](http://nodejs.org/api/https.html#https_class_https_agent) that automatically handles proxy tunnelling using the `https_proxy` environment variable.
 
@@ -18,7 +18,7 @@ var fs = require('fs');
 
 var agent = httpsAgent({
   pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client' 
+  passphrase: 'client'
 });
 ```
 
@@ -37,11 +37,11 @@ var https = require('https');
 
 https.globalAgent = httpsAgent({
   pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client' 
+  passphrase: 'client'
 });
 
 // make HTTPS requests
-``` 
+```
 
 ### Usage with `https.get`
 
@@ -52,7 +52,7 @@ var https = require('https');
 
 var agent = httpsAgent({
   pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client' 
+  passphrase: 'client'
 });
 
 var options = {
@@ -67,7 +67,7 @@ https.get(options, function (res) {
     console.log(data);
   });
 });
-``` 
+```
 
 ### Usage with [request](https://github.com/mikeal/request)
 
@@ -78,13 +78,13 @@ var request = require('request');
 
 var agent = httpsAgent({
   pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client' 
+  passphrase: 'client'
 });
 
 request('https://www.example.com', {agent: agent}, function (err, res, body) {
   console.log(body);
 });
-``` 
+```
 
 ### Usage with [node-rest-client](https://github.com/aacerox/node-rest-client)
 
@@ -95,7 +95,7 @@ var Client = require('node-rest-client').Client;
 
 var agent = httpsAgent({
   pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client' 
+  passphrase: 'client'
 });
 
 var client = new Client({

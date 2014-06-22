@@ -8,7 +8,7 @@ module.exports = function (options) {
   var agent = new https.Agent(options);
 
   if (proxyUrl.hostname && proxyUrl.protocol) {
-    var createTunnel = (proxyUrl.protocol === 'https') ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
+    var createTunnel = (proxyUrl.protocol === 'https:') ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
 
     options.proxy = {
       host: proxyUrl.hostname,

@@ -22,5 +22,8 @@
   "homepage": "https://github.com/robinjmurphy/https-agent",
   "dependencies": {
     "tunnel": "^0.0.3"
+  },
+  "devDependencies": {
+    "request": "^2.36.0"
   }
 }

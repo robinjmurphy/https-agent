@@ -26,24 +26,7 @@ All of the standard [TLS options](http://nodejs.org/api/tls.html#tls_tls_connect
 
 ## Examples
 
-### Usage with `https.globalAgent`
-
-To use an agent as the default agent (rather than setting it on every request) just set it as the [global agent](http://nodejs.org/api/https.html#https_https_globalagent).
-
-```js
-var httpsAgent = require('https-agent');
-var fs = require('fs');
-var https = require('https');
-
-https.globalAgent = httpsAgent({
-  pfx: fs.readFileSync('/path/to/client.p12'),
-  passphrase: 'client'
-});
-
-// make HTTPS requests
-```
-
-### Usage with `https.get`
+### Usage with [`https.get`](http://nodejs.org/api/https.html#https_https_get_options_callback)
 
 ```js
 var httpsAgent = require('https-agent');

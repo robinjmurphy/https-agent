@@ -69,7 +69,7 @@ https.get(options, function (res) {
 });
 ``` 
 
-### Usage with [Request](https://github.com/mikeal/request)
+### Usage with [request](https://github.com/mikeal/request)
 
 ```js
 var httpsAgent = require('https-agent');
@@ -85,3 +85,26 @@ request('https://www.example.com', {agent: agent}, function (err, res, body) {
   console.log(body);
 });
 ``` 
+
+### Usage with [node-rest-client](https://github.com/aacerox/node-rest-client)
+
+```js
+var httpsAgent = require('https-agent');
+var fs = require('fs');
+var Client = require('node-rest-client').Client;
+
+var agent = httpsAgent({
+  pfx: fs.readFileSync('/path/to/client.p12'),
+  passphrase: 'client' 
+});
+
+var client = new Client({
+  connection: {
+    agent: agent
+  }
+});
+
+client.get('https://www.example.com', function (body, res) {
+  console.log(body);
+});
+```

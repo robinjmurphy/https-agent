@@ -22,7 +22,7 @@ var agent = httpsAgent({
 });
 ```
 
-All of the standard [TLS options](http://nodejs.org/api/tls.html#tls_tls_connect_options_callback) are supported when creating an agent. Use the `pfx` and `passphase` options for a certificate in PKCS12 format or the `cert` and `key` options for separate certificate and key files.
+All of the standard [TLS options](http://nodejs.org/api/tls.html#tls_tls_connect_options_callback) are supported when creating an agent. Use the `pfx` and `passphrase` options for a certificate in PKCS12 format or the `cert` and `key` options for separate certificate and key files.
 
 ## Examples
 

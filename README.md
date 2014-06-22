@@ -47,7 +47,7 @@ var options = {
 
 https.get(options, function (res) {
   res.on('data', function (data) {
-    console.log(data);
+    console.log(data.toString());
   });
 });
 ```

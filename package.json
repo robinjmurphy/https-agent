@@ -1,0 +1,26 @@
+{
+  "name": "https-agent",
+  "version": "0.0.1",
+  "description": "Proxy aware HTTPS agent",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robinjmurphy/https-agent.git"
+  },
+  "keywords": [
+    "https",
+    "proxy",
+    "ssl",
+    "certificate",
+    "agent"
+  ],
+  "author": "robin@robinmurphy.co.uk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinjmurphy/https-agent/issues"
+  },
+  "homepage": "https://github.com/robinjmurphy/https-agent",
+  "dependencies": {
+    "tunnel": "^0.0.3"
+  }
+}

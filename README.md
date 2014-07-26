@@ -64,7 +64,7 @@ var agent = httpsAgent({
   passphrase: 'client'
 });
 
-request('https://www.example.com', {agent: agent}, function (err, res, body) {
+request('https://www.example.com', {agent: agent, proxy: false}, function (err, res, body) {
   console.log(body);
 });
 ```

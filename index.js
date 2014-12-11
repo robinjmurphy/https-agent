@@ -3,6 +3,7 @@ var tunnel = require('tunnel');
 var url = require('url');
 
 module.exports = function (options) {
+  options = options || {};
   var proxy = process.env.https_proxy || process.env.HTTPS_PROXY;
   var proxyUrl = proxy ? url.parse(proxy) : {};
   var agent = new https.Agent(options);
@@ -19,4 +20,4 @@ module.exports = function (options) {
   }
 
   return agent;
-}
+};

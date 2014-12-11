@@ -19,8 +19,14 @@
   "bugs": {
     "url": "https://github.com/robinjmurphy/https-agent/issues"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "homepage": "https://github.com/robinjmurphy/https-agent",
   "dependencies": {
     "tunnel": "^0.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
   }
 }
